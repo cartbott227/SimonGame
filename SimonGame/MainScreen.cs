@@ -22,7 +22,7 @@ namespace SimonGame
             Form f = this.FindForm();
             f.Controls.Remove(this);
 
-            GameScreen gs = new GameScreen();
+            GameScreen gs = new GameScreen(); 
             f.Controls.Add(gs);
 
         }
