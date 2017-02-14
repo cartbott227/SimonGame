@@ -60,7 +60,7 @@ namespace SimonGame
                 yellowplayer.Play();
                 Refresh();
                 Thread.Sleep(1000);                
-                yellowButton.BackColor = Color.Yellow;
+                yellowButton.BackColor = Color.Yellow; 
                 Refresh();
             }
 
