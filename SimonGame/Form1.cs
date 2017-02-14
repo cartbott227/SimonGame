@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace SimonGame
 {
+
     public partial class Form1 : Form
     {
+        static public List<int> pattern = new List<int>();
+
         public Form1()
         {
             InitializeComponent();

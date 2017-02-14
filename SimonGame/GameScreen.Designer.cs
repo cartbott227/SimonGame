@@ -44,6 +44,7 @@
             this.greenButton.Size = new System.Drawing.Size(100, 100);
             this.greenButton.TabIndex = 0;
             this.greenButton.UseVisualStyleBackColor = false;
+            this.greenButton.Click += new System.EventHandler(this.greenButton_Click);
             // 
             // redButton
             // 
@@ -54,6 +55,7 @@
             this.redButton.Size = new System.Drawing.Size(100, 100);
             this.redButton.TabIndex = 1;
             this.redButton.UseVisualStyleBackColor = false;
+            this.redButton.Click += new System.EventHandler(this.redButton_Click);
             // 
             // yellowButton
             // 
@@ -64,6 +66,7 @@
             this.yellowButton.Size = new System.Drawing.Size(100, 100);
             this.yellowButton.TabIndex = 2;
             this.yellowButton.UseVisualStyleBackColor = false;
+            this.yellowButton.Click += new System.EventHandler(this.yellowButton_Click);
             // 
             // blueButton
             // 
@@ -74,6 +77,7 @@
             this.blueButton.Size = new System.Drawing.Size(100, 100);
             this.blueButton.TabIndex = 3;
             this.blueButton.UseVisualStyleBackColor = false;
+            this.blueButton.Click += new System.EventHandler(this.blueButton_Click);
             // 
             // GameScreen
             // 
@@ -87,6 +91,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "GameScreen";
             this.Size = new System.Drawing.Size(300, 300);
+            this.Load += new System.EventHandler(this.GameScreen_Load);
             this.ResumeLayout(false);
 
         }

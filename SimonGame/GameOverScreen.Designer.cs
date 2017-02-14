@@ -28,19 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.gameover = new System.Windows.Forms.Label();
+            this.outputLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // gameover
+            // 
+            this.gameover.AutoSize = true;
+            this.gameover.ForeColor = System.Drawing.Color.White;
+            this.gameover.Location = new System.Drawing.Point(68, 38);
+            this.gameover.Name = "gameover";
+            this.gameover.Size = new System.Drawing.Size(61, 13);
+            this.gameover.TabIndex = 0;
+            this.gameover.Text = "Game Over";
+            // 
+            // outputLabel
+            // 
+            this.outputLabel.AutoSize = true;
+            this.outputLabel.ForeColor = System.Drawing.Color.White;
+            this.outputLabel.Location = new System.Drawing.Point(71, 80);
+            this.outputLabel.Name = "outputLabel";
+            this.outputLabel.Size = new System.Drawing.Size(131, 13);
+            this.outputLabel.TabIndex = 1;
+            this.outputLabel.Text = "Your pattern length was: 0";
             // 
             // GameOverScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.outputLabel);
+            this.Controls.Add(this.gameover);
             this.Name = "GameOverScreen";
             this.Size = new System.Drawing.Size(300, 300);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label gameover;
+        private System.Windows.Forms.Label outputLabel;
     }
 }

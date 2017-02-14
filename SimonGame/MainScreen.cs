@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace SimonGame
 {
+
     public partial class MainScreen : UserControl
     {
         public MainScreen()
@@ -25,6 +26,11 @@ namespace SimonGame
             GameScreen gs = new GameScreen(); 
             f.Controls.Add(gs);
 
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
