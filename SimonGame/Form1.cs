@@ -14,7 +14,7 @@ namespace SimonGame
 
     public partial class Form1 : Form
     {
-        static public List<int> pattern = new List<int>();
+        public static List<int> pattern = new List<int>();
 
         public Form1()
         {

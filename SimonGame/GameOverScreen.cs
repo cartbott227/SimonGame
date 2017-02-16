@@ -15,6 +15,8 @@ namespace SimonGame
         public GameOverScreen()
         {
             InitializeComponent();
+
+            outputLabel.Text = "Your pattern length was: " + Form1.pattern.Count();
         }
     }
 }
