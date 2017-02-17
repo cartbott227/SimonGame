@@ -18,5 +18,14 @@ namespace SimonGame
 
             outputLabel.Text = "Your pattern length was: " + Form1.pattern.Count();
         }
+
+        private void closebutton_Click(object sender, EventArgs e)
+        {
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+
+            MainScreen ms = new MainScreen();
+            f.Controls.Add(ms);
+        }
     }
 }
