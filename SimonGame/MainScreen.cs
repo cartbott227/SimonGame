@@ -20,10 +20,16 @@ namespace SimonGame
 
         private void newgameButton_Click(object sender, EventArgs e)
         {
+            //Declare that Form f is the form that this control is on
             Form f = this.FindForm();
+
+            //Remove User Control from the Form
             f.Controls.Remove(this);
 
+            //Create an instance of Game Screen
             GameScreen gs = new GameScreen(); 
+
+            //Add User Control to the Form
             f.Controls.Add(gs);
 
         }
